@@ -15,7 +15,7 @@ fi
 
 yt-dlp \
     --yes-playlist \
-    --format 'ba*' \
+    --format 'ba*[acodec^=aac]/ba*[acodec^=mp4a.40.]/ba*' \
     --extract-audio \
     --audio-format 'm4a' \
     --embed-metadata \
