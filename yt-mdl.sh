@@ -17,6 +17,7 @@ yt-dlp \
     --yes-playlist \
     --format 'ba*' \
     --extract-audio \
+    --audio-format 'm4a' \
     --embed-metadata \
     --parse-metadata 'playlist_index:%(track_number)s' \
     --embed-thumbnail \
