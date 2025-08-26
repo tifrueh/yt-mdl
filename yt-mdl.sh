@@ -36,7 +36,7 @@ done
 base="yt-dlp"
 arg_audio="--extract-audio --audio-format 'm4a'"
 arg_format="--format 'ba*[acodec^=aac]/ba*[acodec^=mp4a.40.]/ba*'"
-arg_metadata="--embed-metadata --parse-metadata 'playlist_index:%(track_number)s'"
+arg_metadata="--embed-metadata --parse-metadata '%(playlist_index)d:%(meta_track)s'"
 arg_output="--output '%(playlist_index)s %(title)s.%(ext)s'"
 arg_playlist="--yes-playlist"
 arg_thumbnail="--embed-thumbnail --convert-thumbnails 'jpg'"
