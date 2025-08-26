@@ -19,10 +19,10 @@ fi
 
 while [ $# -gt 0 ]; do
     if [ "$1" = "-a" -o "$1" = "--album" ]; then
-        arg_album="--parse-metadata '$2:%(album)s'"
+        arg_album="--replace-in-metadata 'album' '^.*$' '$2'"
         shift 2
     elif [ "$1" = "-A" -o "$1" = "--artist" ]; then
-        arg_artist="--parse-metadata '$2:%(artist)s'"
+        arg_artist="--replace-in-metadata 'artist' '^.*$' '$2'"
         shift 2
     elif [ "$1" = "--" ]; then
         url="$2"
