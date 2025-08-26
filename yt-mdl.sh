@@ -2,12 +2,12 @@
 
 progname="$(basename $0)"
 
-help="usage: ${progname} [ -a ALBUM ] [ -A ARTIST ] URL
+help="usage: ${progname} [ -a <album> ] [ -A <artist> ] <url>
 
 options:
-    -a, --album ALBUM           Override the album metadata field.
-    -A, --artist ARTIST         Override the artist metadata field.
-    URL                         The URL of the YouTube Music album."
+    -a, --album <album>         Override the album metadata field.
+    -A, --artist <artist>       Override the artist metadata field.
+    <url>                       The URL of the YouTube Music album."
 
 if [ $# -lt 1 -o $# -gt 5 ]; then
     printf "%s\n" "${help}"
