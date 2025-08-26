@@ -2,11 +2,11 @@
 
 progname="$(basename $0)"
 
-help="usage: ${progname} [ -a ARTIST ] [ -A ALBUM ] URL
+help="usage: ${progname} [ -a ALBUM ] [ -A ARTIST ] URL
 
 options:
-    -A, --artist ARTIST         Override the artist metadata field.
     -a, --album ALBUM           Override the album metadata field.
+    -A, --artist ARTIST         Override the artist metadata field.
     URL                         The URL of the YouTube Music album."
 
 if [ $# -lt 1 -o $# -gt 5 ]; then
